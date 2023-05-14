@@ -1,0 +1,301 @@
+header {
+    display: flex;
+    background: #B8D3D4;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    }
+    header nav ul {
+        margin:0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        gap:55px;
+        padding-right: 50px;
+        font-family: 'Lexend Deca';
+        /*font-size: 28px;*/
+        font-size: clamp(1vh, 1.75rem, 3vw);
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+    
+    header img {
+    max-width: auto;
+    width: 9%;
+    height: auto;
+    }
+
+
+/* ============================GESTIONE LINK STYLE ==================================*/
+
+            a:link {
+                text-decoration: none;
+            }
+
+            a:visited {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: #4BBDC0;
+            }
+
+            a:active {
+                text-decoration: none;
+            }
+
+            a { color: inherit; } 
+
+
+
+/* ============================GESTIONE LINK STYLE ==================================*/
+    
+    body {
+    margin: 0;
+    background: #FFFFFF;
+    padding: 0;
+    }
+    
+    
+    
+    
+    
+    
+    section h1 {
+    font-family: "Nobile";
+    font-weight: 500;
+    /*font-size: 50px;*/
+    font-size: clamp(2vh, 3rem, 3vw);
+    color: #4BBDC0;
+    letter-spacing: 0.05em;
+    }
+    
+    section p {
+        font-family: "Nobile";
+        font-weight: 400;
+        /*font-size: 25px;*/
+        font-size: clamp(1vh, 1.5rem, 3vw);
+        line-height: 140%;
+        letter-spacing: 0.15em;
+    }
+    
+
+
+.camilo-bio h1 {
+    /*font-size: 46px;*/
+    font-size: clamp(1vh, 2.875rem, 3vw);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    padding-bottom: 40px;
+
+}
+
+
+
+
+.camilo-bio {
+margin: auto;
+max-width: 1850px;
+
+
+}
+
+ .camilo-bio p {
+
+    padding-top: 40px;
+    font-size: clamp(1vh, 1.5625rem, 1.5vw);
+    padding: 0 50px;
+    columns: 2 auto;
+    column-rule-style: solid ;
+    column-rule-color: #4BBDC0;
+    column-gap: 60px;
+    letter-spacing: 0.125rem;
+}
+
+
+ 
+mark {
+
+
+    color: #4BBDC0;
+    background: none;
+    font-weight: 500;
+}
+
+
+
+.gallery-camilo img {
+flex:auto;
+max-width: 30%;
+height: auto;
+padding: 0;
+margin: 0;
+gap: 0;
+cursor: pointer;
+}
+
+    
+.gallery-camilo {
+width: 90%;
+padding: 10% 0;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+gap: 2rem;
+margin: auto;
+align-items: center;
+}    
+
+
+
+.gallery-camilo img:hover  {
+    border: solid 4px #4BBDC0;
+    margin: -4px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================FOOTER==================================================*/
+
+
+
+ 
+footer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    max-height: 1000px;
+    max-width: 100%;
+    background: #B8D3D4;
+    height: auto;
+    justify-content: space-between;
+    }
+
+
+
+    footer img {
+    padding: 0;
+    margin: 0;
+    max-width: 10%;
+    width: 10%;
+    }
+
+
+footer p {
+    margin:0;
+    padding: 0;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    /*font-size: 25px;*/
+    font-size: clamp(1vh, 1.5rem, 3vw);
+    line-height: 140%;
+    letter-spacing: 0.15em;
+    color: black;
+    gap: 0;
+}
+
+.info {
+display: flex;
+width: 50%;
+height: auto;
+align-content: space-between;
+justify-content: space-around;
+overflow: hidden;
+}
+
+.icons {
+justify-items: center;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-flow: column;
+margin: 0;
+padding: 0;
+width: 25%;
+height: 100%;
+gap: 20px;
+}
+
+
+.place {
+
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.contatti {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.icons img {
+
+width: 35px;
+
+}
+
+
+.small-text p {
+
+    font-size: clamp(0.05vh, 1rem, 3vw);font-weight: 300;
+color:  #E03701;
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .gallery-camilo img {
+        max-width: 60%;
+    
+    }
+    .gallery-camilo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 3rem;
+    }
+  }
+    
+    
+@media (max-width: 1300px) {
+
+    .gallery-camilo {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90% ;
+    grid-column: auto;
+    padding: 10% 0;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    }
+    
+    .gallery-camilo img {
+    
+    max-width: 70%;
+    
+    }
+    
+    
+    }
